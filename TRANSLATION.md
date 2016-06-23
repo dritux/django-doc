@@ -36,3 +36,25 @@ $ python manage.py makemessages -l es
 $ python manage.py compilemessages -l
 ```
 
+### Others settings.py
+```
+LANGUAGE_CODE = 'en-us'
+USE_I18N = True 
+USE_L10N = True
+
+TEMPLATE_CONTEXT_PROCESSOR = ('django.core.context_processors.i18n',)
+
+"django.middleware.locale.LocaleMiddleware", in MIDDLEWARE_CLASSES
+```
+
+
+
+
+
+
+
+
+
+
+
+
