@@ -1,7 +1,9 @@
 # Translation
 
 
-### Alter polls/views.py
+### Update views file
+
+polls/views.py
 ```
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -13,6 +15,9 @@ def index(request):
     return HttpResponse(output)
 ```
 ---
+
+### Insert locale path
+
 settings.py
 ```
 import os
@@ -26,8 +31,8 @@ LOCALE_PATHS = (
 ---
 
 ### Generate templates
-
+```
 $ python manage.py makemessages -l es
 $ python manage.py compilemessages -l
-
+```
 
